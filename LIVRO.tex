@@ -37,7 +37,7 @@
 \usepackage{edlab-toc}					% define sumário
 \usepackage{edlab-extra}				% define epígrafe, quote
 \usepackage[largepost]{edlab-margins}
-\usepackage[semcabeco, 				% para remover cabeço, sobe mancha e mantem estilos
+\usepackage[%semcabeco, 				% para remover cabeço, sobe mancha e mantem estilos
 			]{edlab-sections}			% define pagestyle (cabeço, rodapé e seções)
 \usepackage[%
 			% notasemlinha 			
@@ -58,8 +58,8 @@
 \setmainfont[Ligatures=TeX,Numbers=OldStyle]{Linux Libertine O}
 
 % Estilos
-\makeoddhead{baruch}{}{\scshape\MakeLowercase{\scshape\MakeTextLowercase{}}}{}
-\makeevenhead{baruch}{}{\scshape\MakeLowercase{}}{}
+\makeoddhead{baruch}{}{}{}
+\makeevenhead{baruch}{}{}{}
 \makeevenfoot{baruch}{}{\footnotesize\thepage}{}
 \makeoddfoot{baruch}{}{\footnotesize\thepage}{}
 \pagestyle{baruch}		
