@@ -5,7 +5,6 @@
 \newcommand{\blankAteven}{\ifodd\thepage\relax\else\blankpage\fi}
 \newcommand{\blankAtodd}{\ifodd\thepage\blankpage\else\relax\fi}
 
-
 % url.sty
 % You can switch the style of printing using “\urlstyle{xx}”, where “xx” can be
 % any defined style. The pre-defined styles are “tt”, “rm”, “sf” and “same” which all
@@ -58,7 +57,6 @@
   \end{list}%
 }
 
-
 % bibliohedra 
 \RequirePackage{ifthen}
 \newcommand{\tit}[1]{\item[\MakeTextLowercase{\textsc{#1}}]}
@@ -87,15 +85,12 @@
     }%
     {\end{list}}
 
-
-
 \newenvironment{absolutelynopagebreak}
   {\par\nobreak\vfil\penalty0\vfilneg
    \vtop\bgroup}
   {\par\xdef\tpd{\the\prevdepth}\egroup
    \prevdepth=\tpd}
 
-   
 \newcommand{\subtitulo}[1]{\NoCaseChange{\textnormal{\break\Large\itshape#1}}}
 \newcommand{\autorcapitulo}[1]{\hfill
   \begin{minipage}{.6\textwidth}
@@ -113,16 +108,6 @@
 
 \newcommand{\letra}[2]{\lettrine[lines=2,nindent=-.1mm,findent=2mm]{#1}{#2}}
 
-
 \newcommand*\EP[1][-1]{\enlargethispage*{#1\baselineskip}}
 
 \newcommand{\qb}[1]{\hfil\break\mbox{}\hfill\hbox{\textnormal{[}\,#1}}
-
-\newcommand{\forceindent}{\leavevmode{\parindent=1,5em\indent}}
-
-
-%Simulando diacríticos na Formular
-
-%\renewcommand{\i}{{\formular i\hspace*{-6.5pt}{–}}}
-
-%\newcommand{\I}{{\formular I\hspace*{-6.5pt}{–}}}

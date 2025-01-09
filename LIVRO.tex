@@ -1,6 +1,6 @@
 \documentclass[showtrims,		% Mostra as marcas de corte em cruz
 			   %trimframe,		% Mostra as marcas de corte em linha, para conferência
-			   12pt				% 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, 20pt 
+			   11pt				% 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, 20pt 
 			   ]{memoir}
 \usepackage[brazilian,
 			% english,
@@ -44,7 +44,7 @@
 			% notalinhalonga
 			chicagofootnotes			% para notas com número e ponto cf. man. de Chicago
 			]{edlab-footnotes}
-
+\usepackage{tikz}
 
 % Medidas (ver: memoir p.11 fig.2.3)
 \parindent=3ex			% Tamanho da indentação
@@ -55,7 +55,11 @@
 % Fontes
 \newfontfamily\formular{Formular}
 \newfontfamily\formularlight{Formular Light}
+%\newfontfamily\formularmi{Formular-bold-mi.otf}
+%\newfontfamily\formular{Formular}
+%\newfontfamily\formularlight{Formular Light}
 \setmainfont[Ligatures=TeX,Numbers=OldStyle]{Linux Libertine O}
+%\setmainfont[Numbers={Proportional,OldStyle}]{Linux Libertine O}
 
 % Estilos
 \makeoddhead{baruch}{}{}{}
@@ -65,15 +69,10 @@
 \pagestyle{baruch}		
 \headstyles{baruch}
 
-% Testes
-
+\newcommand\legenda[1]{\noindent\textcolor{white}{\small\formular\baselineskip=1.1\baselineskip #1}}
+\newcommand\legendaposfacio[1]{\noindent{\small\formular\baselineskip=1.1\baselineskip #1}}
 
 \begin{document}
-
-
-%\input{MUSSUMIPSUM}  		% Teste da classe
 \include{INPUTS}
-
-
 \checkandfixthelayout
 \end{document}
