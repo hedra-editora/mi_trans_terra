@@ -52,14 +52,19 @@
 \marginparsep=1em		% Entre mancha e nota lateral 
 \marginparwidth=4em		% Tamanho da caixa de texto da nota laterial
 
+\babelprovide[transforms = hyphen.repeat]{portuguese}
+
+
 % Fontes
-\newfontfamily\formular{Formular}
-\newfontfamily\formularlight{Formular Light}
+\newfontfamily\formular[
+  BoldFont = Formular-bold-mi.otf
+]{Formular-regular-mi.otf}
 %\newfontfamily\formularmi{Formular-bold-mi.otf}
 %\newfontfamily\formular{Formular}
 %\newfontfamily\formularlight{Formular Light}
 \setmainfont[Ligatures=TeX,Numbers=OldStyle]{Linux Libertine O}
 %\setmainfont[Numbers={Proportional,OldStyle}]{Linux Libertine O}
+
 
 % Estilos
 \makeoddhead{baruch}{}{}{}
