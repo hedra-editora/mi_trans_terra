@@ -29,3 +29,11 @@ original/
 capa/
 temp/
 LIVRO.pdf
+
+
+# sistema e auxiliares que faltavam
+.DS_Store
+*.synctex.gz
+*.out
+*.bbl
+*.blg
